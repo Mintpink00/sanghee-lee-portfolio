@@ -187,7 +187,8 @@
     max-width: 100%;
   }
   
-
+  #correction {
+    padding: 0 36px 0 0; /* 위, 오른쪽, 아래, 왼쪽 순서 */}
   
   
   
@@ -232,6 +233,24 @@
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
   }
     
+
+  
+ /* ✅ 여기에 추가해요: 모바일 대응 */
+ @media screen and (max-width: 768px) {
+    #box-list ul {
+      flex-direction: column;
+      padding: 20px 16px;
+    }
+
+    #box-list ul li {
+      width: 100%;
+      margin-bottom: 20px;
+
+
+      
+    }
+  }
+
     
     </style>
 </head>
@@ -254,8 +273,9 @@
   <section class="project-detail-section">
     <h2>Fashion Shopping App</h2>
 
-    <div class="design-box">
+    <div id="correction"> 
 
+    <div class="design-box">
     <p><strong>Role:</strong> UX Research · 설문조사 · 와이어프레임 · UI 디자인 · 프로토타이핑</p>
     <p><strong>기간:</strong> 2024년 5월 – 6월</p>
 
@@ -439,6 +459,7 @@
     </p>
 
    
+    </div>
    
     <div id="list">
     <a href="projects.html" class="btn outline">← 프로젝트 목록으로 돌아가기</a>
