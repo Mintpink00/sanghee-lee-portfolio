@@ -6,12 +6,14 @@ body {
   color: #1F2D3D;
 }
 
+
 /* 네비게이션 */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -26,6 +28,7 @@ nav ul li a {
   color: #1F2D3D;
   font-weight: 600;
 }
+
 
 /* 히어로 섹션 */
 .hero {
