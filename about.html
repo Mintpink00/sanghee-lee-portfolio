@@ -86,7 +86,7 @@
       // "sh" 아이디를 가진 버튼을 클릭했을 때 CV 다운로드
       document.getElementById("sh").addEventListener("click", function() {
         const link = document.createElement('a');  // 동적으로 <a> 태그 생성
-        link.href = 'assets/CV.pdf';  // 다운로드할 파일 경로 (파일 경로는 확인 필수)
+        link.href = 'CV.pdf';  // 다운로드할 파일 경로 (파일 경로는 확인 필수)
         link.download = 'CV.pdf';  // 다운로드될 파일 이름
         document.body.appendChild(link);  // 링크를 body에 추가
         link.click();  // 클릭 이벤트 실행
