@@ -45,7 +45,13 @@ nav ul li a {
   margin-bottom: 30px;
 }
 
+
+
+
+
 /* 버튼 스타일 */
+
+
 .buttons .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -55,6 +61,8 @@ nav ul li a {
   font-weight: 600;
   background-color: #4D8DFF;
   color: white;
+
+  min-width: 160px; /* 버튼 크기 동일하게 고정 */
 }
 
 .buttons .btn.outline {
