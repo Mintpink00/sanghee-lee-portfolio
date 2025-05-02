@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Sanghee Lee</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Sanghee Lee</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about">
+    <section class="about-section">
+
+
+    <button id="sh">
+
+      Download CV 
+    </button>
+
+<style>
+ /* 버튼 스타일링 */
+#sh{
+  background-color: #4D8DFF;  /* 배경색 */
+      color: white;  /* 글자색 */
+      padding: 15px 32px;  /* 버튼 크기 */
+      font-size: 16px;  /* 글자 크기 */
+      border: none;  /* 테두리 없애기 */
+      border-radius: 5px;  /* 둥근 모서리 */
+      cursor: pointer;  /* 마우스를 올렸을 때 손 모양 */
+      transition: background-color 0.3s;  /* 배경색 변화 애니메이션 */
+      display:block; /* block으로 변경 */
+      margin:20px auto;/* 위아래 20px, 좌우 auto로 중앙 정렬 */}
+      #cv:hover {
+        background-color: #3C77D8;  /* 배경색 변화 */
+    }
+
+</style>
+
+
+
+
+
+  
+
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Sanghee Lee, a creative and analytical UX/UI designer. I strive to create user-centered digital experiences using modern design tools and design thinking processes. I’ve worked on independent projects focusing on real user needs, and I continuously improve through user feedback and usability testing.
+      </p>
+
+      <h3>🛠 Tools & Skills</h3>
+      <ul>
+        <li>Design: Figma, Photoshop, Illustrator, After Effects</li>
+        <li>Code: HTML, CSS, JavaScript, Python, Git (Basic)</li>
+      </ul>
+
+      <h3>🎓 Education</h3>
+      <ul>
+        <li>B.A. in English Literature – Hannam University (2013–2018)</li>
+        <li>UX: The Ultimate Guide to Usability and UX – Udemy Course</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sanghee Lee. All rights reserved.</p>
+  </footer>
+
+
+  
+  <!--  // 다운로드 cv -->
+
+  <script>
+    // 페이지가 로드된 후 JavaScript 코드 실행
+    document.addEventListener('DOMContentLoaded', function() {
+      // "sh" 아이디를 가진 버튼을 클릭했을 때 CV 다운로드
+      document.getElementById("sh").addEventListener("click", function() {
+        const link = document.createElement('a');  // 동적으로 <a> 태그 생성
+        link.href = '../assets/images/CV.pdf';  // 다운로드할 파일 경로 (파일 경로는 확인 필수)
+        link.download = 'CV.pdf';  // 다운로드될 파일 이름
+        document.body.appendChild(link);  // 링크를 body에 추가
+        link.click();  // 클릭 이벤트 실행
+        document.body.removeChild(link);  // 클릭 후 링크 제거 (클린업)
+      });
+    });
+  </script>
+
+
+</body>
+</html>
+
+
+
